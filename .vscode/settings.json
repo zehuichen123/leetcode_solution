@@ -6,6 +6,9 @@
         "initializer_list": "cpp",
         "iterator": "cpp",
         "stack": "cpp",
-        "utility": "cpp"
-    }
+        "utility": "cpp",
+    },
+    "vscode_custom_css.imports": [
+        "file:///Users/kirito/Documents/pastLearning/vscode_css/synthwave84.css"
+    ]
 }
