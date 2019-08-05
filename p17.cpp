@@ -33,3 +33,26 @@ public:
         return solutions;
     }
 };
+
+class Solution {
+public:
+    vector<string> generateParenthesis(int n) {
+        vector<vector<string>>dp ={{""}};
+        for(int i=1; i<=n; i++){
+            vector<string>_dp = {};
+            for(int j=0; j<i; j++){
+                int tmp1 = j;
+                int tmp2 = i-j-1;
+                for(int m=0; m<dp[tmp1].size(); m++){
+                    for(int n=0; n<dp[tmp2].size(); n++){
+                        string ans = "";
+                        ans += ('('+dp[tmp1][m]+')'+dp[tmp2][n]);
+                        _dp.push_back(ans);
+                    }
+                }
+            }
+            dp.push_back(_dp);
+        }
+        return dp[n];
+    }
+};
