@@ -7,6 +7,8 @@
         "iterator": "cpp",
         "stack": "cpp",
         "utility": "cpp",
+        "tuple": "cpp",
+        "type_traits": "cpp"
     },
     "vscode_custom_css.imports": [
         "file:///Users/kirito/Documents/pastLearning/vscode_css/synthwave84.css"
